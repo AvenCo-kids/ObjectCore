@@ -21,22 +21,22 @@
     <ClInclude Include="pch.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\PelucheCore\include\Coordinator.hpp">
+    <ClInclude Include="API.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\PelucheCore\include\API.hpp">
+    <ClInclude Include="Coordinator.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\PelucheCore\include\IAPI.hpp">
+    <ClInclude Include="IAPI.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\PelucheCore\include\Plush.hpp">
+    <ClInclude Include="Plush.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\PelucheCore\include\Sound.hpp">
+    <ClInclude Include="Sound.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\PelucheCore\include\story.hpp">
+    <ClInclude Include="story.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,16 +47,16 @@
     <ClCompile Include="pch.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\PelucheCore\src\API.cpp">
+    <ClCompile Include="API.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\PelucheCore\src\Coordinator.cpp">
+    <ClCompile Include="Coordinator.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\PelucheCore\src\Plush.cpp">
+    <ClCompile Include="Plush.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\PelucheCore\src\Sound.cpp">
+    <ClCompile Include="Sound.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

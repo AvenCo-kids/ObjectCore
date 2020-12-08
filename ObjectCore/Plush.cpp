@@ -1,4 +1,4 @@
-#include "../include/Plush.hpp"
+#include "Plush.hpp"
 
 namespace APC
 {
