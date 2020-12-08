@@ -15,4 +15,4 @@ namespace APC
     };
 }
 
-/* AVENCO_PC_PELUCHE_HPP_ */
+#endif /* AVENCO_PC_PELUCHE_HPP_ */

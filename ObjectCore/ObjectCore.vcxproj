@@ -155,7 +155,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="API.hpp" />
     <ClInclude Include="Coordinator.hpp" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="IAPI.hpp" />
@@ -165,7 +164,6 @@
     <ClInclude Include="story.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="API.cpp" />
     <ClCompile Include="Coordinator.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp">
