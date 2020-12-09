@@ -9,9 +9,7 @@ namespace APC {
 
 		void Coordinator::startStory(story_t *story) {}
 
-        void Coordinator::makeChoice(inputName_t input_name) {}
-
-        void makeChoice(inputName_t input_name)
+        void Coordinator::makeChoice(inputName_t input_name)
         {
             if (_takeInput)
                   _input = input_name;
