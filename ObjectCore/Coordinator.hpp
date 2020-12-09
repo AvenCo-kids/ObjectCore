@@ -14,10 +14,11 @@ namespace APC
         Coordinator() = default;
         ~Coordinator() = default;
 
-        void hand_left(void);
-        void hand_right(void);
-        void feet_left(void);
-        void feet_right(void);
+        void hand__left(void);
+        void hand__right(void);
+        void feet__left(void);
+        void feet__right(void);
+        bool _takeInput(inputName_t input);
         void startStory(story_t *story);
         void makeChoice(inputName_t input) noexcept;
     private:

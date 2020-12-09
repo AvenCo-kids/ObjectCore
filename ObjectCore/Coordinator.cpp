@@ -4,24 +4,28 @@ using namespace std;
 
 namespace APC
 {
-        void hand_left(void)
+        bool _takeInput(inputName_t input)
         {
-                makeChoice(inputName_t(rand()%1));
-        }
-        void hand_right(void)
-        {
-                makeChoice(inputName_t(rand()%2));
-        }
-        void feet_left(void)
-        {
-                makeChoice(inputName_t(rand()%3));
-        }
-        void feet_right(void)
-        {
-                makeChoice(inputName_t(rand()%4));
+                return (hand_left <= input && input <= feet_right);
         }
         void makeChoice(inputName_t input_name)
         {
                 
+        }
+        void hand__left(void)
+        {
+                makeChoice(inputName_t(rand()%1));
+        }
+        void hand__right(void)
+        {
+                makeChoice(inputName_t(rand()%2));
+        }
+        void feet__left(void)
+        {
+                makeChoice(inputName_t(rand()%3));
+        }
+        void feet__right(void)
+        {
+                makeChoice(inputName_t(rand()%4));
         }
 }
