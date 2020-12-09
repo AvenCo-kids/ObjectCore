@@ -1,7 +1,10 @@
+#include "pch.h"
+
+#include <sstream>
+#include <string>
+
 #include "Coordinator.hpp"
 #include "story.hpp"
-
-#include "pch.h"
 
 namespace APC {
 
@@ -55,5 +58,24 @@ namespace APC {
         {
             makeChoice(APC::feet_right);
         }
+
+		void Coordinator::doTp(std::string path)
+		{
+			std::string tmp;
+			story_node_t *currsor = &this->_story->startPoint;
+			std::stringstream spath(path);
+			std::vector<std::string> choices;
+			
+			while (std::getline(spath, tmp, '.'))
+				choices.push_back(tmp);
+			for (auto &pathSeg : choices) {
+				for (auto &choice : currsor->node) {
+					if (choice.inputName == pathSeg) {
+						currsor = &choice.next;
+						break;
+					}
+				}
+			}
+		}
 
 }

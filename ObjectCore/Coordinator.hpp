@@ -20,6 +20,7 @@ namespace APC {
 			void feet_right();
 
 		private:
+			void doTp(std::string path);
 	
 			story_t  *_story;
 			story_node_t *_curr;
