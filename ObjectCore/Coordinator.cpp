@@ -1,4 +1,4 @@
-#include "Coordinator.hpp"
+#include "../ObjectCore/Coordinator.hpp"
 #include "story.hpp"
 
 #include "pch.h"

@@ -1,9 +1,6 @@
 #ifndef AVENCO_PC_COORDINATOR_HPP_
 #define AVENCO_PC_COORDINATOR_HPP_
 
-#include <map>
-#include <string>
-#include <vector>
 #include "story.hpp"
 
 namespace APC {
