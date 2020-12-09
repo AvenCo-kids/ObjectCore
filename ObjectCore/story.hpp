@@ -12,8 +12,8 @@
 #include <vector>
 
 namespace APC {
-	
-	//typedef struct {} story_node_t;
+
+	typedef struct story_choice_s story_choice_t;
 
     static const char *INPUTNAME[] = {
         "hand_left",
@@ -35,20 +35,20 @@ namespace APC {
         void *params;
     } story_output_t;
 
-    typedef struct {
+	typedef struct {
+		bool hasScript;
+		int waitTime;
+		std::vector<story_output_t> output;
+		std::vector<story_choice_t> node;
+	} story_node_t;
+
+    struct story_choice_s {
         std::string inputName;
         story_node_t next;
         bool tp;
         std::string path;
         void *params;
-    } story_choice_t;
-
-    typedef struct {
-        bool hasScript;
-        int waitTime;
-        std::vector<story_output_t> output;
-        std::vector<story_node_t> node;
-    } story_node_t;
+    };
 
     typedef struct {
         std::string _id;
