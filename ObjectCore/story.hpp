@@ -13,7 +13,7 @@
 
 namespace APC {
 	
-	typedef struct {} story_node_t;
+	//typedef struct {} story_node_t;
 
     static const char *INPUTNAME[] = {
         "hand_left",
