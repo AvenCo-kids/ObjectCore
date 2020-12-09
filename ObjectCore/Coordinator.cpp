@@ -7,7 +7,7 @@ namespace APC
 {
         bool _takeInput(inputName_t input)
         {
-                return (hand_left <= input && input <= feet_right);
+
         }
         void makeChoice(inputName_t input_name)
         {
