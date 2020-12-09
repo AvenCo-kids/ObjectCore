@@ -11,5 +11,6 @@
 #include "framework.h"
 #include "Coordinator.hpp"
 #include "Plush.hpp"
+#include "Sound.hpp"
 
 #endif //PCH_H

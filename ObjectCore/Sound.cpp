@@ -6,6 +6,7 @@
 */
 
 #include "Sound.hpp"
+#include "pch.h"
 
 namespace APC
 {
