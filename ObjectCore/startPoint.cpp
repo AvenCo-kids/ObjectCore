@@ -1,4 +1,5 @@
 #include "startPoint.h"
+#include "pch.h"
 
 namespace APC {
 	Plush *startPlush(void) {

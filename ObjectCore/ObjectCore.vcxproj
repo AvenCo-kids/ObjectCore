@@ -158,6 +158,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Downloads\startPoint.h" />
     <ClInclude Include="Coordinator.hpp" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="IAPI.hpp" />

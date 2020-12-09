@@ -12,5 +12,6 @@
 #include "Coordinator.hpp"
 #include "Plush.hpp"
 #include "Sound.hpp"
+#include "startPoint.h"
 
 #endif //PCH_H
