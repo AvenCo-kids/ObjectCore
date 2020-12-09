@@ -23,11 +23,11 @@ namespace APC {
     };
 
     typedef enum inputName {
-        hand_left,
-        hand_right,
-        feet_left,
-        feet_right,
-        none
+        HAND_LEFT,
+        HAND_RIGHT,
+        FEET_LEFT,
+        FEET_RIGHT,
+        NONE
     } inputName_t;
 
     typedef struct {
