@@ -1,5 +1,4 @@
-#ifndef AVENCO_PC_COORDINATOR_HPP_
-#define AVENCO_PC_COORDINATOR_HPP_
+#pragma once
 
 #include "story.hpp"
 
@@ -30,5 +29,3 @@ namespace APC {
 	};
 
 }
-
-#endif /* AVENCO_PC_COORDINATOR_HPP_ */

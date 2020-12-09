@@ -1,9 +1,7 @@
-#include "../ObjectCore/Coordinator.hpp"
+#include "Coordinator.hpp"
 #include "story.hpp"
 
 #include "pch.h"
-
-using namespace std;
 
 namespace APC {
 
