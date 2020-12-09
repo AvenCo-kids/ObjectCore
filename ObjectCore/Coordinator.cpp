@@ -10,7 +10,8 @@ namespace APC
         }
         void makeChoice(inputName_t input_name)
         {
-                
+                if (_takeInput(input_name))
+                        inputName_t _input = input_name
         }
         void hand__left(void)
         {

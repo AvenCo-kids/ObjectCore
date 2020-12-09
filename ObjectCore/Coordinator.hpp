@@ -22,6 +22,7 @@ namespace APC
         void startStory(story_t *story);
         void makeChoice(inputName_t input) noexcept;
     private:
+        inputName_t _input;
         story_t *_story;
         story_node_t *_curr;
     };
