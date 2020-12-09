@@ -1,33 +1,36 @@
 #include "Coordinator.hpp"
+#include "story.hpp"
+
 #include "pch.h"
 
 using namespace std;
 
-namespace APC
-{
-        bool _takeInput(inputName_t input)
+namespace APC {
+
+		void Coordinator::startStory(story_t *story)
+		{
+		}
+
+        void Coordinator::makeChoice(inputName_t input_name)
         {
-                return (hand_left <= input && input <= feet_right);
+            if (_takeInput)
+                  _input = input_name;
         }
-        void makeChoice(inputName_t input_name)
+
+		void Coordinator::hand_left(void)
         {
-                if (_takeInput(input_name))
-                        inputName_t _input = input_name;
         }
-        void hand__left(void)
+        
+		void Coordinator::hand_right(void)
         {
-                makeChoice(inputName_t(rand()%1));
         }
-        void hand__right(void)
+        
+		void Coordinator::feet_left(void)
         {
-                makeChoice(inputName_t(rand()%2));
         }
-        void feet__left(void)
+        
+		void Coordinator::feet_right(void)
         {
-                makeChoice(inputName_t(rand()%3));
         }
-        void feet__right(void)
-        {
-                makeChoice(inputName_t(rand()%4));
-        }
+
 }
