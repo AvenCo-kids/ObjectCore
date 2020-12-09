@@ -4,6 +4,16 @@ namespace APC
 {
 	Plush::Plush(): _coord(new Coordinator), _thread(nullptr)
 	{
+		/*this->_story = {
+			"null",
+			"Nitou, le petit indien",
+			{
+				true,
+				0,
+				{},
+				{}
+			}
+		};*/
 	}
 	Plush::~Plush()
 	{

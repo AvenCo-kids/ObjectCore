@@ -3,6 +3,7 @@
 
 #include <thread>
 #include "Coordinator.hpp"
+#include "story.hpp"
 
 namespace APC
 {
@@ -22,6 +23,7 @@ namespace APC
     private:
         Coordinator *_coord;
 		std::thread *_thread;
+		story_t _story;
     };
 }
 
