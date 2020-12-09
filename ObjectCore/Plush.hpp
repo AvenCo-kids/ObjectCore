@@ -20,6 +20,8 @@ namespace APC
 		void feet_left(void);
 		void feet_right(void);
 
+		Coordinator *getCoor(void) const;
+
     private:
         Coordinator *_coord;
 		std::thread *_thread;

@@ -44,10 +44,10 @@ namespace APC {
 
     struct story_choice_s {
         std::string inputName;
-        story_node_t next;
         bool tp;
         std::string path;
         void *params;
+        story_node_t next;
     };
 
     typedef struct {

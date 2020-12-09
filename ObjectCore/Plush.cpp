@@ -5,16 +5,55 @@ namespace APC
 {
 	Plush::Plush(): _coord(new Coordinator), _thread(nullptr)
 	{
-		/*this->_story = {
+		this->_story = {
 			"null",
 			"Nitou, le petit indien",
 			{
 				true,
 				0,
 				{},
-				{}
+				{
+					{
+						"hand_left",
+						false,
+						"",
+						nullptr,
+						{
+							true,
+							0,
+							{},
+							{
+								{
+									"feet_left",
+									false,
+									"",
+									nullptr,
+									{
+										true,
+										0,
+										{},
+										{
+											{
+												"feet_left",
+												false,
+												"",
+												nullptr,
+												{
+													true,
+													0,
+													{},
+													{}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
-		};*/
+		};
 	}
 	Plush::~Plush()
 	{
@@ -23,7 +62,9 @@ namespace APC
 	}
 	void Plush::start()
 	{
-		this->_thread = new std::thread(&Coordinator::startStory, this->_coord, nullptr);
+		this->_thread = new std::thread([&](APC::story_t *story) {
+			this->getCoor()->startStory(story);
+		}, &this->_story);
 	}
 	void Plush::hand_left(void)
 	{
@@ -40,5 +81,9 @@ namespace APC
 	void Plush::feet_right(void)
 	{
 		this->_coord->feet_right();
+	}
+	Coordinator * Plush::getCoor(void) const
+	{
+		return this->_coord;
 	}
 }
