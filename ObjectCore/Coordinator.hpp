@@ -16,8 +16,8 @@ namespace APC {
 
 			void hand_left();
 			void hand_right();
-			void feet_left();
-			void feet_right();
+			void foot_left();
+			void foot_right();
 
 		private:
 	

@@ -13,21 +13,19 @@
 
 namespace APC {
 	
-	//typedef struct {} story_node_t;
-
-    static const char *INPUTNAME[] = {
+    static const char *INPUT_NAME[] = {
         "hand_left",
         "hand_right",
-        "feet_left",
-        "feet_right"
+        "foot_left",
+        "foot_right"
     };
 
     typedef enum inputName {
-        hand_left,
-        hand_right,
-        feet_left,
-        feet_right,
-        none
+        HAND_LEFT,
+        HAND_RIGHT,
+	FOOT_LEFT,
+        FOOT_RIGHT,
+        IN_NONE
     } inputName_t;
 
     typedef struct {
@@ -47,7 +45,7 @@ namespace APC {
         bool hasScript;
         int waitTime;
         std::vector<story_output_t> output;
-        std::vector<story_node_t> node;
+        std::vector<story_choice_t> node;
     } story_node_t;
 
     typedef struct {
