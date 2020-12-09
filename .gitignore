@@ -9,6 +9,7 @@
 __pycache*
 .vs
 Debug
+ObjectCore.vcxproj
 
 
 # Test files
