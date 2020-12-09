@@ -7,13 +7,13 @@ namespace APC {
 
 		void Coordinator::startStory(story_t *story)
 		{
-			_curr = story->startPoint;
+			/*_curr = story->startPoint;
 			_input = none;
-			Sound _sound(path + "/text.ogg");
+			Sound _sound("/text.ogg");
 			_sound.play();
 			while (_sound.isPlaying());
 			_takeInput = true;
-			for (int i = 0; i < strlen(INPUT_NAME); i++) {
+			for (int i = 0; i < strlen(INPUTNAME); i++) {
 				if (_input != none)
 					break;
 				if (node[_input].takeablePath) {
@@ -27,7 +27,7 @@ namespace APC {
 				if (node[_input].takeablePath)
 					done = true;
 			}
-			_takeInput = false;
+			_takeInput = false;*/
 		}
 
         void Coordinator::makeChoice(inputName_t input_name)
