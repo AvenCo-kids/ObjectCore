@@ -10,5 +10,6 @@
 // ajouter les en-têtes à précompiler ici
 #include "framework.h"
 #include "Coordinator.hpp"
+#include "Plush.hpp"
 
 #endif //PCH_H
