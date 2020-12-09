@@ -16,18 +16,18 @@ namespace APC
 	}
 	void Plush::hand_left(void)
 	{
-		this->_coord->hand__left();
+		this->_coord->hand_left();
 	}
 	void Plush::hand_right(void)
 	{
-		this->_coord->hand__right();
+		this->_coord->hand_right();
 	}
 	void Plush::feet_left(void)
 	{
-		this->_coord->feet__left();
+		this->_coord->feet_left();
 	}
 	void Plush::feet_right(void)
 	{
-		this->_coord->feet__right();
+		this->_coord->feet_right();
 	}
 }
