@@ -5,30 +5,30 @@
 
 namespace APC {
 
-    void Coordinator::startStory(story_t *story)
-    {
-        _curr = story->startPoint;
-        _input = IN_NONE;
-        Sound _sound(path + "/text.ogg");
-        _sound.play();
-        while (_sound.isPlaying());
-        _takeInput = true;
-        for (int i = 0; i < strlen(INPUT_NAME); i++) {
-            if (_input != IN_NONE)
-                break;
-            if (node[_input].takeablePath) {
-                _sound.setSound(path + "/" + INPUT_NAME[i] + ".ogg");
-                _sound.play();
-                while (_sound.isPlaying());
-            }
-        }
-        for (bool done = false; !done;) {
-            while (_input == IN_NONE);
-            if (node[_input].takeablePath)
-                done = true;
-        }
-        _takeInput = false;
-    }
+		void Coordinator::startStory(story_t *story)
+		{
+			_curr = story->startPoint;
+			_input = none;
+			Sound _sound(path + "/text.ogg");
+			_sound.play();
+			while (_sound.isPlaying());
+			_takeInput = true;
+			for (int i = 0; i < strlen(INPUT_NAME); i++) {
+				if (_input != none)
+					break;
+				if (node[_input].takeablePath) {
+					_sound.setSound(path + "/" + INPUT_NAME[i] + ".ogg");
+					_sound.play();
+					while (_sound.isPlaying());
+				}
+			}
+			for (bool done = false; !done;) {
+				while (_input == none);
+				if (node[_input].takeablePath)
+					done = true;
+			}
+			_takeInput = false;
+		}
 
         void Coordinator::makeChoice(inputName_t input_name)
         {
@@ -46,14 +46,14 @@ namespace APC {
             makeChoice(APC::hand_right);
         }
 
-		void Coordinator::foot_left()
+		void Coordinator::feet_left()
         {
-            makeChoice(APC::foot_left);
+            makeChoice(APC::feet_left);
         }
 
-		void Coordinator::foot_right()
+		void Coordinator::feet_right()
         {
-            makeChoice(APC::foot_right);
+            makeChoice(APC::feet_right);
         }
 
 }
