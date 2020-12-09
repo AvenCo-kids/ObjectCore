@@ -15,11 +15,11 @@ namespace APC {
 	{
 		pPlush->hand_right();
 	}
-	void feet_left(Plush* pPlush)
+	void feet_left(Plush *pPlush)
 	{
 		pPlush->feet_left();
 	}
-	void feet_right(Plush* pPlush)
+	void feet_right(Plush *pPlush)
 	{
 		pPlush->feet_right();
 	}
