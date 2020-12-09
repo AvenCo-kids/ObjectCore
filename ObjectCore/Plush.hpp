@@ -1,6 +1,7 @@
 #ifndef AVENCO_PC_PELUCHE_HPP_
 #define AVENCO_PC_PELUCHE_HPP_
 
+#include <thread>
 #include "Coordinator.hpp"
 
 namespace APC
@@ -8,15 +9,19 @@ namespace APC
     enum class InputType {SomeInput, AnotherInput};
 
     class Plush
-    { // need at least 2 threads to run plush & server (so the API can ping us)
+    {
     public:
-        Plush() = default;
-        ~Plush() = default;
+        Plush();
+        ~Plush();
+		void start();
+		void hand_left(void);
+		void hand_right(void);
+		void feet_left(void);
+		void feet_right(void);
 
-        Plush& setInputFromUnity(InputType type) noexcept;
     private:
-        Coordinator _coord;
-        InputType _input;
+        Coordinator *_coord;
+		std::thread *_thread;
     };
 }
 
